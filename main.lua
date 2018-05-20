@@ -900,6 +900,12 @@ function love.draw()
 
 			drawFont(tostring(timer), 256 - (timerx * 8), 2)
 		end
+
+		-- Draw moving variables
+		drawFont("SPD "..tostring(herospeed), 2, 18)
+		drawFont("ACL "..tostring(heroaccel), 2, 26)
+		drawFont("SBX "..tostring(herosubx), 2, 34)
+		drawFont("HEX "..tostring(herox), 2, 42)
 	end
 end
 
